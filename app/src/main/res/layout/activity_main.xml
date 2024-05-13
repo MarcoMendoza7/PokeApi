@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-59dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="181dp"
+                android:layout_height="188dp"
+                android:layout_marginStart="90dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/atleta"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/titulo" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/metrosUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:hint="TIEMPO MINUTOS" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/segundosUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:hint="TIEMPO SEGUNDOS" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/metrosDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:hint="TIEMPO MINUTOS" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/segundosDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:hint="TIEMPO SEGUNDOS" />
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:text="@string/calcular" />
+
+            <Button
+                android:id="@+id/nuevo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/nuevo" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

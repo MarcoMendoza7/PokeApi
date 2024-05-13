@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Atletas</string>
+    <string name="titulo">.:A T L E T A S:.</string>
+    <string name="puntaje">PUNTAJE\n</string>
+    <string name="calcular">CALCULAR TIEMPO</string>
+    <string name="nuevo">NUEVO</string>
+</resources>
